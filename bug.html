@@ -1,0 +1,7 @@
+This error occurs when using Tailwind CSS's `@apply` directive with a utility class that doesn't exist or is misspelled.  For example:
+
+```html
+<div class="bg-blue-500 @apply text-wrong-color"></div>
+```
+
+Here, `text-wrong-color` is not a valid Tailwind class, leading to this error.  The error may not be immediately obvious, as it might not halt the build, but the styles won't be applied as expected. The class may be simply misspelled or missing from your `tailwind.config.js` file's `content` array (if using JIT mode).
