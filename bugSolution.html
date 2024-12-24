@@ -1,0 +1,7 @@
+The corrected code simply fixes the misspelling in the `@apply` directive:
+
+```html
+<div class="bg-blue-500 @apply text-red-500"></div>
+```
+
+Ensure that `text-red-500` (or any class used with `@apply`) is correctly defined in your Tailwind configuration.  Double-check spelling and that the class exists in the Tailwind CSS configuration and that the necessary plugins are installed and configured correctly. If using JIT mode, check that your class is included within the `content` array in your `tailwind.config.js` file.
